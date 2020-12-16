@@ -366,6 +366,20 @@
              </li>
            </ul>
           </div>
+          <div class="subscribe">
+              <p class="join">Подпишитесь на рассылку</p>
+              <form class="subscribe-form">
+                
+                  <label class="subscribe-label" for="subscribe"> </label>
+                  <input class="subscribe-input" type="text" name="subscribe" placeholder="E-mail">
+                  <button class=" button subscribe-btn" type="submit">Подписаться
+                      <svg class="subcribe-icon" width='24px' height='24px' >
+                          <use href="icons/symbol-defs.svg#icon-send"></use>
+                      </svg>
+                  </button>
+                  
+              </form>
+          </div>
 
         </div>
     </footer>
@@ -405,11 +419,15 @@
             <textarea class="form-input comment" name="comment" id="comment" placeholder="Введите текст" rows="10"></textarea>
           </div>
            <div  role="group" class="form-checkbox">
-                <input class="visually-hidden" type="checkbox" name="terms" id="terms">
-                <label class="form-label" for="terms">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                
+                <label class="checkbox-label" for="terms">
+                    <input class="visually-hidden check-input" type="checkbox" name="terms" id="terms">
+                    <svg class="check-icon" width="15" height="15">
+                      <use href="icons/symbol-defs.svg#icon-check"></use>
+                    </svg>Соглашаюсь с рассылкой и принимаю <a class="check-link" href="">Условия договора</a></label>
             </div>
           
-            <button type="submit">Отправить</button>
+            <button class=" button submit-btn" type="submit">Отправить</button>
         </form>
     </div>
 </div>
